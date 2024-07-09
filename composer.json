@@ -23,7 +23,5 @@
         "psr-4": {
             "Threecommerce\\Base\\": ""
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
