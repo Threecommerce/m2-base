@@ -1,0 +1,25 @@
+<?php /** @var \Threecommerce\Base\Block\Adminhtml\PluginList $block */ ?>
+<div class="plugin-list">
+    <h1>Plugin List</h1>
+    <ul>
+        <?php foreach ($block->getPlugins() as $plugin):
+            if ($plugin->is_active != 1) continue; ?>
+            <li class="plugin_items">
+                <a href="<?= $plugin->link; ?>" target="_blank">
+                    <img src="<?= $plugin->immagine; ?>" alt="<?= $plugin->titolo; ?>" title="<?= $plugin->titolo; ?>">
+                    <div class="info">
+                        <h2><?= $plugin->titolo; ?></h2>
+                        <?php if ($plugin->special_price): ?>
+                            <span class="special-price"><?= $plugin->special_price; ?></span>
+                        <?php endif; ?>
+                        <?php if ($plugin->is_free == 0): ?>
+                            <span class="price <?php if ($plugin->special_price) echo 'old'; ?>"><?= $plugin->price; ?></span>
+                        <?php else: ?>
+                            <span class="free"><?= __('FREEEE!') ?></span>
+                        <?php endif; ?>
+                    </div>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
