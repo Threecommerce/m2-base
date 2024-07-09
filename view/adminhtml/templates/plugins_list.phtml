@@ -9,10 +9,10 @@
                     <img src="<?= $plugin->immagine; ?>" alt="<?= $plugin->titolo; ?>" title="<?= $plugin->titolo; ?>">
                     <div class="info">
                         <h2><?= $plugin->titolo; ?></h2>
-                        <?php if ($plugin->special_price): ?>
-                            <span class="special-price"><?= $plugin->special_price; ?></span>
-                        <?php endif; ?>
                         <?php if ($plugin->is_free == 0): ?>
+                            <?php if ($plugin->special_price): ?>
+                                <span class="special-price"><?= $plugin->special_price; ?></span>
+                            <?php endif; ?>
                             <span class="price <?php if ($plugin->special_price) echo 'old'; ?>"><?= $plugin->price; ?></span>
                         <?php else: ?>
                             <span class="free"><?= __('FREEEE!') ?></span>
