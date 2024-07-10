@@ -2,11 +2,11 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add
-            id="Threecommerce_Base::base"
+            id="Threecommerce_Base::Base"
             title="3commerce"
             module="Threecommerce_Base"
             sortOrder="20"
-            resource="Threecommerce_Base::base"
+            resource="Threecommerce_Base::Base"
         />
         <add
             id="Threecommerce_Base::OtherPlugins"
@@ -14,8 +14,8 @@
             module="Threecommerce_Base"
             sortOrder="100"
             action="threecommerce/other/plugin"
-            resource="Threecommerce_Base::base"
-            parent="Threecommerce_Base::base"
+            resource="Threecommerce_Base::Base"
+            parent="Threecommerce_Base::Base"
         />
     </menu>
 </config>
