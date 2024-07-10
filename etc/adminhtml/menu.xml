@@ -12,7 +12,7 @@
             id="Threecommerce_Base::OtherPlugins"
             title="I nostri plugin"
             module="Threecommerce_Base"
-            sortOrder="10"
+            sortOrder="100"
             action="threecommerce/other/plugin"
             resource="Threecommerce_Base::base"
             parent="Threecommerce_Base::base"
